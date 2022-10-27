@@ -17,22 +17,23 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
       <ul>
-        <li>HTML gives content structure</li>
+        <li>Hypertext Markup Language (HTML) creates content and gives content structure with text, images, headers, lists, layout, etc.</li>
         <li>the head element contains information, or metadata, that helps the browser render the page correctly; the elements included are not visisble when a user looks at a webpage</li>
         <li>the body element contains the content that is shown to the user; all the elements that we want the user to see and interact with must be placed inside this element</li>
-        <li>declarations are not case-sensitive; HTML elements are case-sensistive</li>
+        <li>declarations are not case-sensitive; HTML elements are case-sensitive</li>
         <li>an HTML attribute defines additional information about an element; e.g. html lang="en" means the we language for the webpage is english</li>
         <li>there are lots of metadata tags to learn that u can use inside the head element</li>
-        <li>title defines the title for a webpage and is important for SEO</li>
-        <li>style defines the CSS styles associated with a website</li>
-        <li>base defines the base URL for a webpage</li>
-        <li>link connects an external resource to the HTML document</li>
-        <li>meta defines metadata such as the character set, description, keywords, author and viewport</li>
+        <li>title element defines the title for a webpage and is important for SEO</li>
+        <li>style element defines the CSS styles associated with a website</li>
+        <li>base element defines the base URL for a webpage</li>
+        <li>link element connects an external resource to the HTML document</li>
+        <li>meta element defines metadata such as the character set, description, keywords, author and viewport</li>
         <li>script embeds client-side scripts in the HTML document</li>
         <li>charset is the character set</li>
         <li>!DOCTYPEhtml tells us the document is written in HTML</li>
         <li>http-equiv sets an HTTP header for content</li>
         <li>viewport sets the default view for our webpage</li>
+        <li>see <a href="https://www.w3schools.com/tags/tag_meta.asp">HTML meta tags</a> to learn more about other types of info that can be stored in the meta tag </li>
         <li>parent/child element - the body element is the parent and 3+ elements nestled inside the body is the child</li>
         <li>semantic HTML elements: the name of the element describes its content and the role it plays on a webpage</li>
         <li>div creates a division on the page</li>
@@ -43,7 +44,7 @@
         <li>p is a paragraph or block of text</li>
         <li>ul creates an unordered list</li>
         <li>ol creates an ordered list</li>
-        <li> creates listed items</li>
+        <li>li creates listed items</li>
         <li>img contains information about images displayed on a webpage and can contain various attributes; e.g. src attribute defines the location of the image & alt attribute contains a text string that describes the appearance and functionality of the image - also important for screen readers and assistvie technologies</li>
         <li>br creates a line of empty space or a line break between two blocks of content</li>
         <li>a stands for anchor and creates links to the same webpage or other webpages; href attribute points to the URL for the link</li>
@@ -54,12 +55,14 @@
       <section class="card" id="css=section">
         <h2>CSS</h2>
       <ul>
+        <li>Cascading Style Sheets (CSS) styles the content of an application with fonts, colors, spacing, etc.</li>
         <li>inline CSS:  style an element directly in the HTML file; useful for quick and permanent changes but less flexible than external and internal style sheets</li>
         <li>internal style sheet: contains CSS rules for the webpage in the head section of the HTML file; a single change to the CSS rule will apply to all tagged page elements; uses style element</li>
-        <li> external style sheet: (most common way to style a webpage) allows devs to keep all CSS rules in a separate file, which makes design changes easier; uses link element</li>
+        <li>external style sheet: (most common way to style a webpage) allows devs to keep all CSS rules in a separate file, which makes design changes easier; uses link element</li>
         <li>declaration: contains the CSS property and value of the property</li>
         <li>margin (property): indicates how much space we want around the outside of an element</li>
         <li>padding (property): adds space around the content inside an element; increasing padding makes the entire element bigger</li>
+        <li>see <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">the box model</a> for more on margins, borders, padding and content</li>
         <li>asterisk: wild card symbol: declares that ALL elements on the page will have the same style properties</li>
         <li>can combine 2 selectors (e.g. header and footer) into a single CSS rule with a comma .. helps us write Do Not Repeat Yourself (DRY) code; can greatly reduce the overall size and complexity of a codebase</li>
         <li>text-align: positioning property</li>
@@ -71,6 +74,7 @@
         <li>href attribute specifies the location (URL) of the external resource</li>
         <li>.card designates a class selector; any HTML element assigned to the class will gain those property assignments</li>
         <li>can assign colors using semantic references (e.g. gray or blue) or by a hexadecimal code or hex #</li>
+        <li>always need to link the CSS file to the HTML file within the head element</li>
         
       </ul>
       </section>
@@ -78,17 +82,87 @@
       <section class="card" id="git=section">
         <h2>Git</h2>
         <ul>
+          <li>git is a version control system that lets you manage & keep track of each version of your project</li>
+          <li>github is a cloud-based hosting service that allows you to keep track of your projects inside of repositories (repos) that are stored remotely</li>
+          <li>repositories (repos): folders in GitHub that store files that contain code, files that contain other information about the code, like  README file, and the version history for all of the files in the repo </li>
+          <li>when creating a new repository in GitHub, use a name that is unique and descriptive, lowercase letters, dashes not spaces, and consistent</li>
+          <li>README files are used to pass along useful information to anyone who visits the repo on GitHub</li>
+          <li>licenses allow developers to use your code fairly; MIT license allows for commercial use</li>
+          <li>use "Issues" to note the user story and acceptance crietria</li>
+          <li>the main branch is the default branch; you should create a feature branch which is a copy of the main branch to make changes</li>
+          <li>in the feature branch, you make commits of all changes made to the code with a commit message that is descriptive of what changed in the code; it's important to commit often</li>
+          <li>a pull request (PR) is used to merge a feature branch into the main branch</li>
+          <li>git commands in the command line always start with git</li>
+          <li>git clone [paste copied SSH value]: clones a GitHub repo onto your computer
           <li>git status: checks what branch we are currently on</li>
-          <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>git add -A: command to commit all files in the working branch</li>
-          <li>git commit -m "message": associates a message with the commit</li>
+          <li>git checkout -b [branch-name]: creates a new branch and switches to it</li>
+          <li>git add -A: command adds modifications in the current working branch to the staging area</li>
+          <li>git commit -m [message that describes what the commit contains]: creates a commit that captures a snapshot of the currently staged changes; key to writing effective commit messages is to write them as imperative commands in the present tense</li>
+          <li>git pull origin main: pulls down any changes from the base branch to double-check that the local branch is in sync with the base branch</li>
+          <li>git push origin [branch-name]: pushes changes to the remote branch</li>
+          <li>git revert [SHA]: reverts to a previous version history</li>
+          <li>SHA, or hash: a unique identifier that allows you to keep a record of the specific changes committed; devs often only type out the first seven numbers or letters</li>
+          <li>see <a href="https://education.github.com/git-cheat-sheet-education.pdf">git-cheat-sheet</a> for more common git commands</li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>JavaScript (JS) creates logic & allows the user to interact with the application</li>
+          <li>see <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">javascript basics</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures">javascript data types</a> for an overview of JS</li>
+          <li>JS variable (var): a named container that allows you to store data in your code</li>
+          <li>assignment operator = assigns specific data that you want stored in your variable</li>
+          <li>e.g. var shape = circle; shape is the name of the variable and circle is the data it stores</li>
+          <li>a variable can contain a string that includes all topics within quotation marks</li>
+          <li>console.log method ouputs a message to the web console by adding an argument; see more on console.log <a href="https://developer.mozilla.org/en-US/docs/Web/API/Console/log">here</a></li>
+          <li>always need to link the JS file to the HTML file within the body element</li>
+          <li>can use Chrome DevTools to view console.log output; this method makes it easier for devs to test their code and debug</li>
+          <li>in JS, control flow code runs from the first statement at the top of the page down to the last statement at the bottom of the page</li>
+          <li>conditional statements and loops control the order in which code is executed</li>
+          <li>an if statement is a way of introducing decision-making into your code</li>
+          <li>when a computer encounters an if statement, it will check to see if the condition provided is truthy - a Boolean with a value of true</li>
+          <li>=== is a strict equality operator that checks to see if two values are equal</li>
+          <li>array: a single variable that is used to hold a group of data; string data needs to be contained within quotation marks unlike numerical or Boolean values</li>
+          <li>index: a unique number that tells you the location of the data item in the array; starts at 0</li>
+          <li>for loop: a type of loop that uses the predictable patter of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over</li>
+          <li>first statement in a for loop determines the starting point for the loop</li>
+          <li>the second statement in a for loop is the condition</li>
+          <li>the final statement in a for loop allows the array to iterate over each item</li>
+          <li>commenting out code with /* */ makes it inactive without deleting it</li>
+          <li>a function is a set of instructions that tells the computer how to perform a certain task; a function's name is folloowed by parentheses</li>
+          <li>use a math function to randomize the selection</li>
+        </ul>
+      </section>
+
+      <section class="card" id="vocabulary-section">
+        <h2>Vocabulary</h2>
+        <ul>
+          <li>user story: a short description of the user you're creating an application for (type of person using the application, what the user wants from the application, why the user wants what they want)</li>
+          <li>acceptance criteria: list of the things your application must achieve in order to be considered done</li>
+          <li>computational thinking: process of understanding a complex problem by breaking that problem into smaller parts & then developing possible solutions that can be presented in an understandable and clear way</li>
+          <li>4 cornerstones of computational thinking: decomposition (breaking down a problem into smaller tasks), pattern recognition (finding patterns to solve a particular problem), abstraction (focusing only on relevant information), & testing and debugging algorithms</li>
+          <li>event trigger: when the completion of the first event triggers the second event</li>
+          <li>conditional statement: allows you to make decision based on conditions in your code</li>
+          <li>debugging: changing the algorithm after finding a mistake in the code</li>
+          <li>loop: an action that will repeat over and over again until a condition is met</li>
+          <li>agile: a framework for how to deal with issues that focuses on the people doing the work and how they work together</li>
+          <li>terminal: the application that allows you to interact with the shell</li>
+          <li>package: contains code written by others that you can add to and use on your computer and in projects</li>
+          <li>pair programming: when two developers collaborate on a feature or a project</li>
+          <li>driver-navigator model: a common pair programming strategy with a developer using the keyboard to type code (driver) and another developer who is responsible for the overall direction of the project (navigator)</li>
+          <li>web development project: a web application or web app that provides a solution to a real-world problem</li>
+          <li>web application: an application, accessed via a web browser that allows users to perform tasks on the internet</li>
+          <li>uniform resource locator (URL): the unique address given to a specific resource on the web</li>
+          <li>minimum viable produce (MVP): first iteration of a product without extra features; an important milestone in the development process because it fulfills the requirements and proves that the solution to the program works</li>
+          <li>Markdown: a lightweight plain-text formatting language similar to working with a .doc</li>
+          <li>blocker/bottleneck: stuck on a particular problem or a point in the development process that is slowing down the rest of production</li>
+          <li>feature: a functional part of the application or website that has value or fulfills a need in the business</li>
+          <li>graphical user interface (GUI): a way for users to interact with the computer visually</li>
+          <li>separation of concerns: separating code into different files based on use; a key design principle to ensure that each section of code has its own responsibility</li>
+          <li>Do Not Repeaty Yourself (DRY) is a coding principle that encourages developers to reuse or share pieces of code in order to reduce the number of lines of code that need to be written or maintained; greatly reduces the overal size and complexity of a codebase</li>
+          <li>control flow: the order in which a computer executes code in a script</li>
+          <li>boolean data type: has one of two possible values (true or false) that represent the two truth values of logic</li>
         </ul>
       </section>
 
